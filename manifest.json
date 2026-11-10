@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Merge Contacts",
+  "description": "Right-click in the Address Book to merge selected contacts, even across address books.",
+  "version": "1.0.1",
+  "author": "Maximilien Chaumon",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "merge-contacts@chaumon.local",
+      "strict_min_version": "128.0"
+    }
+  },
+  "permissions": ["addressBooks"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "experiment_apis": {
+    "abContextMenu": {
+      "schema": "api/abContextMenu/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["abContextMenu"]],
+        "script": "api/abContextMenu/implementation.js"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+:root { color-scheme: light dark; font: menu; font-size: 13px; }
+body { margin: 16px 20px; }
+h1 { font-size: 1.4em; margin: 0 0 4px; }
+h2 { font-size: 1.05em; margin: 18px 0 6px; }
+.hint { opacity: .75; margin: 0; }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 4px 8px; vertical-align: top; border-bottom: 1px solid color-mix(in srgb, currentColor 15%, transparent); }
+th { font-weight: 600; opacity: .8; }
+td.from { opacity: .65; white-space: nowrap; }
+td.field { white-space: nowrap; font-weight: 600; }
+td.value { white-space: pre-wrap; word-break: break-word; }
+tr.excluded td.value, tr.excluded td.field { text-decoration: line-through; opacity: .5; }
+tr.master { background: color-mix(in srgb, AccentColor 12%, transparent); }
+tr.readonly { opacity: .6; }
+.opt { display: block; margin: 14px 0 4px; }
+#warnings { color: #c60; margin: 6px 0; white-space: pre-wrap; }
+.buttons { display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px; }
+button { padding: 5px 16px; }
+button.primary { font-weight: 600; }
+#status { margin-top: 8px; white-space: pre-wrap; }
+#status.error { color: #d22; }

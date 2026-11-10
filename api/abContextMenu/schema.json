@@ -1,0 +1,36 @@
+[
+  {
+    "namespace": "abContextMenu",
+    "functions": [
+      {
+        "name": "init",
+        "type": "function",
+        "async": true,
+        "description": "Inject the menu item into all current and future Address Book tabs.",
+        "parameters": [
+          { "name": "label", "type": "string" }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "name": "onMergeRequested",
+        "type": "function",
+        "description": "Fired when the user picks the merge item. Passes the selected cards.",
+        "parameters": [
+          {
+            "name": "cards",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "parentId": { "type": "string" }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

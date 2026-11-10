@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Merge contacts</title>
+  <link rel="stylesheet" href="merge.css">
+</head>
+<body>
+  <h1>Merge contacts</h1>
+  <p class="hint">Pick the card to keep. Its name, photo and other single fields win. Emails, phones, addresses, etc. from the other cards are added to it. Untick any line you don't want.</p>
+
+  <section>
+    <h2>Selected cards</h2>
+    <table id="cards">
+      <thead><tr><th>Keep</th><th>Name</th><th>Address book</th><th>Emails</th><th>Phones</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Result</h2>
+    <table id="preview">
+      <thead><tr><th></th><th>Field</th><th>Value</th><th>From</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <label class="opt"><input type="checkbox" id="deleteOthers" checked> Delete the other cards after merging</label>
+  <div id="warnings"></div>
+
+  <div class="buttons">
+    <button id="cancel">Cancel</button>
+    <button id="merge" class="primary">Merge</button>
+  </div>
+  <div id="status"></div>
+
+  <script src="vcard.js"></script>
+  <script src="merge.js"></script>
+</body>
+</html>
