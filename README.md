@@ -24,3 +24,7 @@ Thunderbird → Add-ons and Themes → ⚙ → *Install Add-on From File…* →
 - `background.js` – opens the merge window with the selected cards.
 - `ui/vcard.js` – vCard parsing/merging (pure, testable with node).
 - `ui/merge.*` – merge window.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
